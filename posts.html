@@ -1,0 +1,38 @@
+---
+layout: blog
+title: Blog Desarrolladores
+permalink: /devblog
+sidebarExtras: plugins
+root: devblog
+---
+
+{% for post in site.posts %}
+
+<article class="entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+	<div class="content-wrapper">
+		<header class="entry-header">
+			<h2 class="entry-title" itemprop="headline">
+				<a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark" itemprop="url">{{ post.title }}</a>
+			</h2>
+			<div class="entry-meta">
+				<span class="cat-links" itemprop="articleSection">
+					<time class="entry-published published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+					{{ post.date | date: "%b %-d, %Y" }}
+					</time>	
+				</span>
+			</div>
+		</header>
+		<div class="entry-summary" itemprop="description">
+			{% if post.excerpt %}
+			<p>{{ post.excerpt }}</p>
+			{% else %}
+			<p>{{ post.content | strip_html | truncatewords: 250 }}</p>
+			{% endif %}
+		</div>
+		<span class="more-link-wrapper">
+			<a href="{{ post.url | prepend: site.baseurl }}" class="more-link">Leer Más +</a>
+		</span>
+	</div>
+</article>
+
+{% endfor %}

@@ -1,0 +1,11 @@
+
+<ol class="breadcrumb">
+  <li><a href="{{site.baseurl}}/">Documentación</a> &nbsp; </li>
+  {% for breads in page.breadcrumb %}
+  	{% if breads[1] %}
+     <li><a href="{{site.baseurl}}/{{ breads[1] }}">{{ breads[0] }}</a></li>
+    {% else %}
+     <li class="active">{{ breads[0] }}</li>
+    {% endif %}
+  {% endfor %}
+</ol>

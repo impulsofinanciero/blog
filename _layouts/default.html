@@ -1,0 +1,32 @@
+{% include header.html %}       
+{% include main-menu.html %}
+{% include navbar.html%}
+    <div class="docs">
+        <div class="container">
+            {% if page.breadcrumb %}
+            <div class="row">
+                <div class="col-md-12">
+                    {% include breadcrumb.html %}
+                </div>
+            </div>
+            {% endif %}  
+            <div class="row docs-body ">
+                <div class="col-md-3 cp-sidebar"> 
+                	<div class="">
+                	{% include sidebar.html %}
+                   </div>
+                    {% if page.sidebarExtras == "plugins" %}
+                  		{% include sidebar-plugins-top.html%}
+                    {% endif %}
+                </div>
+                <div class="col-md-8 col-md-offset-1">
+                {% if page.icon %}
+					{% assign icon = site.data.icons[page.icon] %}
+					<img class="icon-plugin" src="{{ "/assets/images/icons/" | prepend: site.baseurl }}{{icon}}" >	
+                {% endif %}   
+                {{ content }}
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </div>

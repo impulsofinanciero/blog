@@ -1,0 +1,16 @@
+{
+	"woocommerce":{
+		"version":"3.0.2",
+		"download": "https://s3.amazonaws.com/compropago/plugins/woocommerce/compropago-wc-3-0-x.zip",
+		"git": "https://github.com/compropago/plugin-woocommerce.git",
+		"repo":	"https://github.com/compropago/plugin-woocommerce",
+		"demo": "http://ec2-54-67-109-149.us-west-1.compute.amazonaws.com/woocommerce_qa/"
+	},
+	"prestashop":{
+		"version":"2.0.3",
+		"download": "https://s3.amazonaws.com/compropago/plugins/prestashop/compropago-ps-2-0-x.zip",
+		"git": "https://github.com/compropago/plugin-prestashop.git",
+		"repo":"https://github.com/compropago/plugin-prestashop",
+		"demo": "http://ec2-54-67-109-149.us-west-1.compute.amazonaws.com/prestashop/1.6.1/"	
+	}
+}

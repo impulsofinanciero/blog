@@ -1,0 +1,54 @@
+.cp-top
+    min-width: 260px
+    margin-top: 30px
+
+    h2
+        color: $darkgray
+        font-size: 16px
+
+.cp-card-plugin
+    position: relative
+    background-color: $lightwhite
+    border: $lightgray solid 1px
+    +border-radius(2px)
+    +transition(150ms)
+    padding-top: 8px
+    padding-bottom: 8px
+    padding-left: 20px
+    cursor: pointer
+    margin-bottom: 10px
+
+    img
+        height: 44px
+
+    span
+        color: $gray
+        @extend .semi
+        margin-left: 10px
+
+    .cp-version
+        color: $lightwhite
+        background-color: $gray
+        padding: 2px 12px
+        +border-radius(40px)
+
+    .cp-show
+        color: $lightwhite
+        position: absolute
+        top: 25px
+        right: 20px
+        @extend .regular
+        +transition(150ms)
+    
+    &:hover
+        border-color: $green
+        margin-top: -5px
+        margin-bottom: 15px
+        @extend .shadow
+
+        .cp-show
+            color: $green
+            top: 20px
+
+
+

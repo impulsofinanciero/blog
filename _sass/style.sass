@@ -1,0 +1,195 @@
+@import colors
+@import mixins
+@import docs
+@import main-menu
+@import navbar
+@import buttons
+@import syntax-highlighting
+@import top
+
+.shadow
+    -webkit-box-shadow: 0px 0px 20px 0px rgba($gray,0.20)
+    -moz-box-shadow: 0px 0px 20px 0px rgba($gray,0.20)
+    box-shadow: 0px 0px 20px 0px rgba($gray,0.20)
+
+.semi
+    font-weight: 600
+
+.regular
+    font-weight: 400
+
+.flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+
+html
+    font-size: 14px
+
+body
+    font-family: "proxima-nova",sans-serif
+    color: $gray
+    background-color: $white
+    @extend .regular
+
+h1
+    font-size: 32px
+    color: $darkgray
+    @extend .semi
+    
+h2
+    font-size: 26px
+    color: $darkgray
+    @extend .regular
+    
+h3
+    font-size: 22px
+    color: $darkgray
+    @extend .regular
+    
+h4
+    font-size: 16px
+    @extend .semi
+    
+h5
+    font-size: 14px
+    color: $blue
+    @extend .semi
+    
+h6
+    font-size: 12px
+    @extend .regular
+
+// li
+//     font-weight: 600
+    
+a
+    color: $blue
+    
+    &:hover
+        color: $blue
+        
+// pre
+//     background-color: $gray
+//     color: $lightwhite
+//     padding-top: 8px
+//     padding-bottom: 8px
+//     padding-left: 12px
+
+
+    
+blockquote
+    border-left: 5px $lightgray solid
+    padding-left: 15px
+    font-size: 16px
+
+    h6
+        font-size: 16px
+    
+hr
+    border-top: $green 1px $lightgray
+    margin-left: 0
+    margin-top: 25px
+    margin-bottom: 25px
+    max-width: 30%
+
+img
+    max-width: 100%
+    height: auto
+
+.card
+    background-color: $lightwhite
+    border-color: $mediumgray
+    +border-radius(2px)
+    +transition(150ms)
+
+    h4
+        margin-bottom: 10px
+
+    p
+        font-size: 12px
+        margin-bottom: 30px
+
+    img
+        // height: 87px
+        // width: 87px
+        margin-bottom: 15px
+    
+    &:hover
+        border-color: $green
+        margin-top: -5px
+        @extend .shadow        
+
+.card-block
+    padding: 30px
+
+.cp-sidebar
+    min-width: 260px
+    background-color: $lightwhite
+    padding: 0px
+    border: 1px solid $lightgray
+    @extend .shadow
+    +border-radius(2px)
+
+    dl
+        padding: 30px
+
+        dt
+            padding-top: 15px
+            font-size: 14px
+            @extend .semi
+
+            a
+                color: $gray
+                text-transform: uppercase
+
+        dd
+            margin-left: 30px
+            font-size: 12px
+            list-style-type: none
+            color: $gray
+
+            a
+                color: $gray
+
+            ul
+                margin-top: 10px
+                margin-bottom: 0px
+
+                li
+                    list-style-type: none
+
+                    a
+                        color: $blue
+                        font-size: 12px
+
+    h4
+        color: $blue
+        background-color: transparent
+
+.cp-logo-footer
+    margin-top: 60px
+    margin-bottom: 60px
+    text-align: center
+
+.cp-landing-docs
+    @extend .flex-center
+    height: 200px
+    background-color: $blue
+    margin-bottom: 90px
+    position: relative
+    z-index: 1
+
+    &:after
+        content: ""
+        background-image: url($baseurl+"/assets/images/landing-hit.png")
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        position: absolute
+        opacity: 0.3
+        z-index: -1
+
+    h2
+        color: $white

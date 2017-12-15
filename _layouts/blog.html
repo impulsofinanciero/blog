@@ -1,0 +1,15 @@
+{% include header.html %}       
+{% include main-menu.html %}
+{% include navbar.html%}  
+        <div class="container blog">       
+            <div class="row docs-body">
+                <div class="col-md-8 ">
+                {{ content }}
+                </div>
+                <div class="col-md-4"> 
+                	{% include sidebar.html %}
+                </div>
+            </div>
+        </div>
+{% include footer.html %}
+

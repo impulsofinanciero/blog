@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="87px" height="87px" viewBox="0 0 87 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>magento</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M18,14 L69,14 L69,74 L18,74 L18,14 Z"></path>
+    </defs>
+    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lobby" transform="translate(-624.000000, -333.000000)">
+            <g id="Group-5-Copy-4" transform="translate(536.000000, 303.000000)">
+                <g id="magento" transform="translate(88.000000, 30.000000)">
+                    <circle id="Oval-9" fill="#FFFFFF" cx="43.5" cy="43.5" r="43.5"></circle>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M39.75,65.684 L43.5,67.999925 L47.249925,65.684 L47.249925,32.1545 L55.5,37.25 L55.5,66.588275 L43.5,74 L31.500075,66.588275 L31.500075,37.25 L39.75,32.1545 L39.75,65.684 L39.75,65.684 Z M62.24985,62.41925 L62.24985,33.5 L43.5,21.919175 L24.750075,33.5 L24.750075,62.41925 L18,58.249925 L18,29.749925 L43.5,14 L69,29.749925 L69,58.249925 L62.24985,62.41925 L62.24985,62.41925 Z" id="Fill-1" fill="#EE672F" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

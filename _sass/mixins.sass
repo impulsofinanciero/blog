@@ -1,0 +1,29 @@
+=border-radius($val)
+    -webkit-border-radius: $val
+    -moz-border-radius: $val
+    -ms-border-radius: $val
+    border-radius: $val
+
+
+=transition($val)
+    transition: all $val ease
+    -webkit-transition: all $val ease
+    -moz-transition: all $val ease
+    -o-transition: all $val ease
+    -ms-transition: all $val ease
+
+=box-shadow($val)
+    -webkit-box-shadow: $val
+    -moz-box-shadow: $val
+    box-shadow: $val
+
+=cp-btn($val)
+    border: 1px solid $val
+    color: $val
+
+    &:focus
+        color: $val
+
+    &:hover
+        background-color: $val
+        color: $lightwhite

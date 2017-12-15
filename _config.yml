@@ -1,0 +1,43 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+encoding: "utf-8"
+title: Compropago Docs 
+email: its_me@rolandolucio.com
+description: > # this means to ignore newlines until "baseurl:"
+  Sitio de Documentación ComproPago .
+#remote (githubpage) | prepend: site.baseurl all urls
+#baseurl: "/documentacion" #local path
+#local | prepend: site.baseurl may broke some calls may need / before  | prepend: site.baseurl
+baseurl: "/devblog" 
+
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+#url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: compropago
+github_username:  compropago
+
+# Build settings
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+#highlighter: pygments
+highlighter: rouge
+
+collections:
+  docs:
+    output: true
+    permalink: /:path
+
+#Copy right Sets
+owner: Compropago Dev Theme
