@@ -7,21 +7,26 @@
 
 # Site settings
 encoding: "utf-8"
-title: Compropago Docs 
-email: its_me@rolandolucio.com
-description: > # this means to ignore newlines until "baseurl:"
-  Sitio de Documentación ComproPago .
+exclude: ["README.md"] # files to exclude
+title: Blog - Impulso Financiero 
+description: > # this means to ignore newlines until next group 
+  Entradas del blog
+  Y temas interesantes.. .
+
 #remote (githubpage) | prepend: site.baseurl all urls
 #baseurl: "/documentacion" #local path
 #local | prepend: site.baseurl may broke some calls may need / before  | prepend: site.baseurl
-baseurl: "/devblog" 
-
+baseurl: /blog 
+roxyurl: "https://impulsofinanciero.com"
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 #url: "http://localhost:4000" # the base hostname & protocol for your site
-twitter_username: compropago
-github_username:  compropago
+links:
+  twitter: ImpulsoFin 
+  facebook: ImpulsoFinancieroMx 
+  github: impulsofinanciero
+  www: "https://impulsofinanciero.com"
 
 # Build settings
 
@@ -40,4 +45,4 @@ collections:
     permalink: /:path
 
 #Copy right Sets
-owner: Compropago Dev Theme
+owner: Impulso Financiero

@@ -1,32 +1,29 @@
-{% include header.html %}       
-{% include main-menu.html %}
-{% include navbar.html%}
-    <div class="docs">
-        <div class="container">
-            {% if page.breadcrumb %}
-            <div class="row">
-                <div class="col-md-12">
-                    {% include breadcrumb.html %}
-                </div>
-            </div>
-            {% endif %}  
-            <div class="row docs-body ">
-                <div class="col-md-3 cp-sidebar"> 
-                	<div class="">
-                	{% include sidebar.html %}
-                   </div>
-                    {% if page.sidebarExtras == "plugins" %}
-                  		{% include sidebar-plugins-top.html%}
-                    {% endif %}
-                </div>
-                <div class="col-md-8 col-md-offset-1">
-                {% if page.icon %}
-					{% assign icon = site.data.icons[page.icon] %}
-					<img class="icon-plugin" src="{{ "/assets/images/icons/" | prepend: site.baseurl }}{{icon}}" >	
-                {% endif %}   
-                {{ content }}
-                </div>
-            </div>
-        </div>
-        {% include footer.html %}
-    </div>
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+
+    <!-- FaceBook Share Thumb -->
+    <meta property="og:title" content="Impulso Financiero" />
+    <meta property='og:image' content='https://impulsofinanciero.com/assets/images/fb_impulsores.jpg' />
+    <meta property="og:url" content="http://impulsofinanciero.com/blog/index.html" />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{{ " /assets/css/main.css " | prepend: site.baseurl }}">
+</head>
+
+<body>
+    {{ content }}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,55 +1,35 @@
 ---
-layout: default-dev
-title: Scaffolding 
+layout: default
 root: home
 ---
- 
-<div class="row">
-  <div class="col-md-12">
-    <div class="cp-landing-docs">
-      <h2>RECIBIR PAGOS EN EFECTIVO ES SENCILLO</h2>
-    </div>
-  </div>
 
-  <div class="col-md-3">
-      <div class="card card-block text-xs-center">
-        <img src="{{ "/assets/images/icon-general.svg" | prepend: site.baseurl }}">
-        <h4 class="card-title">API / DOCS</h4>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn cp-btn-primary cp-btn-green">Go somewhere</a>
-      </div>
-  </div>
-  <div class="col-md-3">
-      <div class="card card-block text-xs-center">
-        <img src="{{ "/assets/images/icon-general.svg" | prepend: site.baseurl }}">
-        <h4 class="card-title">Plugins</h4>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn cp-btn-primary cp-btn-green">Go somewhere</a>
-      </div>
-  </div>
-  <div class="col-md-3">
-      <div class="card card-block text-xs-center">
-        <img src="{{ "/assets/images/icon-general.svg" | prepend: site.baseurl }}">
-        <h4 class="card-title">Librerías</h4>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn cp-btn-primary cp-btn-green">Go somewhere</a>
-      </div>
-  </div>
-  <div class="col-md-3">
-      <div class="card card-block text-xs-center">
-        <img src="{{ "/assets/images/icon-general.svg" | prepend: site.baseurl }}">
-        <h4 class="card-title">General</h4>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn cp-btn-primary cp-btn-green">Go somewhere</a>
-      </div>
-  </div>
-</div>
+{% for post in site.posts %}
 
-<div class="row">
-  <div>
-    <a href="#" class="btn cp-btn-primary cp-btn-blue">Hola mundo</a>
-    <a href="#" class="btn cp-btn-primary cp-btn-red">Hola mundo</a>
-    <a href="#" class="btn cp-btn-primary cp-btn-green">Hola mundo</a>
-    <a href="#" class="btn cp-btn-primary cp-btn-yellow">Hola mundo</a>
-  </div>
-</div>
+<article class="entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+	<div class="content-wrapper">
+		<header class="entry-header">
+			<h2 class="entry-title" itemprop="headline">
+				<a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark" itemprop="url">{{ post.title }}</a>
+			</h2>
+			<div class="entry-meta">
+				<span class="cat-links" itemprop="articleSection">
+					<time class="entry-published published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+					{{ post.date | date: "%b %-d, %Y" }}
+					</time>	
+				</span>
+			</div>
+		</header>
+		<div class="entry-summary" itemprop="description">
+			{% if post.excerpt %}
+			<p>{{ post.excerpt }}</p>
+			{% else %}
+			<p>{{ post.content | strip_html | truncatewords: 250 }}</p>
+			{% endif %}
+		</div>
+		<span class="more-link-wrapper">
+			<a href="{{ post.url | prepend: site.baseurl }}" class="more-link">Leer Más +</a>
+		</span>
+	</div>
+</article>
+
+{% endfor %}

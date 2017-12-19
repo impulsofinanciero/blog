@@ -10,8 +10,4 @@
 
 $baseurl: '{{ site.baseurl }}';
 
-@import 'app';
-@import 'style';
-@import 'sidebar';
-@import 'blog';
-@import 'cards';
+@import 'colors';
