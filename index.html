@@ -6,6 +6,9 @@ root: home
 {% for post in site.posts %}
 
 <article class="entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+	<div class="entry-highlight">
+		<img src="{{ '/assets/content/bitcoin.gif' | prepend: site.baseurl }}">
+	</div>
 	<div class="content-wrapper">
 		<header class="entry-header">
 			<h2 class="entry-title" itemprop="headline">

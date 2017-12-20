@@ -2,12 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
-
-
 // Our variables
 //$base-font-family: 'Open Sans', sans-serif;
 
 $baseurl: '{{ site.baseurl }}';
+$roxyurl: '{{ site.roxyurl }}';
+$url: '{{ site.url }}';
 
-@import 'colors';
+@import 'style';

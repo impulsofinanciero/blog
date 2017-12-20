@@ -13,34 +13,26 @@
 .regular
     font-weight: 400
 
-.flex-center
-    display: flex
-    align-items: center
-    justify-content: center
 
 html
-    // font-size: 14px
+    // font-size: 16px
     font-size: 100%
-
+    font-family: "proxima-nova",'Open Sans', sans-serif
 body
-    font-family: "proxima-nova",sans-serif
-    color: $gray
-    background-color: $white
-    @extend .regular
-
+    background-color: $blueLight
 h1
     font-size: 32px
-    color: $darkgray
+    color: $grayDark
     @extend .semi
     
 h2
     font-size: 26px
-    color: $darkgray
+    color: $grayDark
     @extend .regular
     
 h3
     font-size: 22px
-    color: $darkgray
+    color: $grayDark
     @extend .regular
     
 h4
@@ -67,7 +59,7 @@ a
         
 // pre
 //     background-color: $gray
-//     color: $lightwhite
+//     color: $white
 //     padding-top: 8px
 //     padding-bottom: 8px
 //     padding-left: 12px
@@ -75,7 +67,7 @@ a
 
     
 blockquote
-    border-left: 5px $lightgray solid
+    border-left: 5px $grayLight solid
     padding-left: 15px
     font-size: 16px
 
@@ -83,7 +75,7 @@ blockquote
         font-size: 16px
     
 hr
-    border-top: $green 1px $lightgray
+    border-top: $green 1px $grayLight
     margin-left: 0
     margin-top: 25px
     margin-bottom: 25px
@@ -93,99 +85,46 @@ img
     max-width: 100%
     height: auto
 
-.card
-    background-color: $lightwhite
-    border-color: $mediumgray
-    +border-radius(2px)
-    +transition(150ms)
+.if-header
+    margin-bottom: 1%
 
-    h4
-        margin-bottom: 10px
+nav img 
+    // width: 100%
+    max-height: 80px
 
-    p
-        font-size: 12px
-        margin-bottom: 30px
 
-    img
-        // height: 87px
-        // width: 87px
-        margin-bottom: 15px
-    
-    &:hover
-        border-color: $green
-        margin-top: -5px
-        @extend .shadow        
 
-.card-block
-    padding: 30px
+.if-wrap
+    background: transparent
 
-.cp-sidebar
-    min-width: 260px
-    background-color: $lightwhite
-    padding: 0px
-    border: 1px solid $lightgray
-    @extend .shadow
-    +border-radius(2px)
+.if-footer-nav
+    background: $blueDarkLight
+    padding-top: 2%
+    margin: 1% 0 0 0
+    color: $white
+    font-size: .7rem
+    text-decoration: none
 
-    dl
-        padding: 30px
+    i 
+        color: $gray
+        font-size: 1rem
+        padding-right: .7em
 
-        dt
-            padding-top: 15px
-            font-size: 14px
-            @extend .semi
-
-            a
-                color: $gray
-                text-transform: uppercase
-
-        dd
-            margin-left: 30px
-            font-size: 12px
-            list-style-type: none
-            color: $gray
-
-            a
-                color: $gray
-
-            ul
-                margin-top: 10px
-                margin-bottom: 0px
-
-                li
-                    list-style-type: none
-
-                    a
-                        color: $blue
-                        font-size: 12px
-
-    h4
-        color: $blue
-        background-color: transparent
-
-.cp-logo-footer
-    margin-top: 60px
-    margin-bottom: 60px
-    text-align: center
-
-.cp-landing-docs
-    @extend .flex-center
-    height: 200px
-    background-color: $blue
-    margin-bottom: 90px
-    position: relative
-    z-index: 1
-
-    &:after
-        content: ""
-        background-image: url($baseurl+"/assets/images/landing-hit.png")
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
-        position: absolute
-        opacity: 0.3
-        z-index: -1
-
-    h2
+    a
         color: $white
+        text-decoration: none
+        &:hover
+            color: $white
+            text-decoration: underline
+
+.if-footer-cr
+    background: $blueDark
+    padding: 1%
+    text-align: center
+    color: $grayLight
+
+.entry
+    background: $white
+
+.content-wrapper
+    padding: 10%

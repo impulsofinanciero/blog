@@ -13,14 +13,119 @@
     <meta property="og:title" content="Impulso Financiero" />
     <meta property='og:image' content='https://impulsofinanciero.com/assets/images/fb_impulsores.jpg' />
     <meta property="og:url" content="http://impulsofinanciero.com/blog/index.html" />
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- Fonts and assets required by CSS -->
+    <script src="https://use.typekit.net/nmz1rxe.js"></script>
+    <script>
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- Customize Grid/FM CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS  -->
-    <link rel="stylesheet" href="{{ " /assets/css/main.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl  }}">
 </head>
 
 <body>
-    {{ content }}
+    <header class="container if-header">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="{{ '/assets/images/logos/logo.png' | prepend: site.baseurl }}">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container if-wrap">
+        <div class="row">
+            <div class="col-12">
+                {{ content }}
+            </div>
+        </div>
+    </section>
 
+    <footer class="container-fluid if-footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <b>55 4195 2068</b>
+                        <br>
+                    </p>
+                    <p>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                        <b>52 55 8184 4168</b>
+                        <br>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <b>contacto@impulsoresfinancieros.com</b>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <p>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <b>Av.Insurgentes Sur 800 </b> int.
+                        <b>1111</b>
+                        <br> Col.Nápoles, Benito Juarez
+                        <br> CDMX
+                        <br>
+                    </p>
+                    <p>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <a href="assets/pdf/aviso_de_privacidad.pdf" target="_new">Aviso de Privacidad</a>
+                        <br>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <p>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/impulsofinancieromx/" target="_new">ImpulsoFinancieroMx</a>
+                        <br>
+                    </p>
+                    <p>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://twitter.com/ImpulsoFin" target="_new">ImpulsoFin</a>
+                        <br>
+                    </p>
+                    <p>
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <a href="https://impulsofinanciero.com">impulsofinanciero.com</a>
+                        <br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="container-fluid if-footer-cr">
+        &copy; 2017, Impulso Financiero
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
