@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until next group
 baseurl: /blog 
 roxyurl: "https://impulsofinanciero.com"
 
-paginate: 10 # pagination based on number of posts
+paginate: 1 # pagination based on number of posts
 paginate_path: "page:num"
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -49,3 +49,6 @@ collections:
 
 #Copy right Sets
 owner: Impulso Financiero
+
+# PLUGINS
+plugins: [jekyll-paginate]
