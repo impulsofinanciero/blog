@@ -19,6 +19,9 @@ description: > # this means to ignore newlines until next group
 baseurl: /blog 
 roxyurl: "https://impulsofinanciero.com"
 
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 #url: "http://localhost:4000" # the base hostname & protocol for your site
