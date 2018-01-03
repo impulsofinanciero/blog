@@ -1,6 +1,10 @@
 # Blog de Impulso Financiero
 =============================
 
+MarkDown Editor
+https://stackedit.io/editor
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ```ssh
 ~ $ gem install jekyll bundler
