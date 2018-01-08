@@ -37,11 +37,21 @@
 
     <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
-
+    
     <!-- FaceBook Share Thumb -->
-    <meta property="og:title" content="Impulso Financiero" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    {% if page.highlight %}
+    <meta property='og:image' content="{{ page.highlight | prepend:'/assets/content/' | prepend: site.baseurl | prepend: site.roxyurl}}" />
+    {% else %}
     <meta property='og:image' content='https://impulsofinanciero.com/assets/images/fb_impulsores.jpg' />
-    <meta property="og:url" content="http://impulsofinanciero.com/blog/index.html" />
+    {% endif %}
+    <meta property="og:url" content="{{page.url | prepend: site.baseurl | prepend: site.roxyurl}}" />
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | strip | strip_html }}" />
+    {% else %}
+    <meta property="og:description" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+    {% endif %}
+    <meta property="og:type" content="article" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
