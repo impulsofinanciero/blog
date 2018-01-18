@@ -1,7 +1,7 @@
 ---
 layout: entry
 root: blog
-title:  "El mal y común hábito del préstamo
+title:  "El mal y común hábito del préstamo"
 date:   2018-01-18 15:46:01 -0600
 groups: [general,finanzas]
 tags: ["Cuesta de Enero"]
@@ -9,8 +9,6 @@ author: Impulso Financiero
 comments: true
 
 ---
-
-
 Época perfecta para hablar de estos temas, sumergidos en la ansiedad post Navidad y prensados a la espera de la primeras quincenas del año, gran perfecto para perder los estribos y sumergirnos en una de esas cosas que siempre nos vemos tentados a hacer; recurrir a un préstamo. Es la típica manera de multiplicar “falsamente” nuestros ingresos para así cubrir con una parte del gasto con la que el principio de año nos rebasa. Pero es que el bendito préstamo nos hace exactamente eso, romper todo el año pagandolo. Por eso que es todo un mal hábito que podemos erradicar con algunos sencillos pasos que puedes calendarizar para todo tu año. 
 
 
