@@ -2,7 +2,7 @@
 layout: entry
 root: blog
 title:  "El mal y común hábito del préstamo"
-date:   2018-01-18 15:46:01 -0600
+date:   2018-01-19 11:00:00 -0600
 groups: [general,finanzas]
 tags: ["Cuesta de Enero"]
 author: Impulso Financiero
