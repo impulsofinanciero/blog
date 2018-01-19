@@ -5,7 +5,7 @@ title:  "El mal y común hábito del préstamo"
 date:   2018-01-19 11:00:00 -0600
 groups: [general,finanzas]
 tags: ["Cuesta de Enero"]
-highlight: 
+highlight: el mal y común hábito del préstamo.jpg 
 author: Impulso Financiero
 comments: true
 
