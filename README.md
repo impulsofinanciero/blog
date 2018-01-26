@@ -27,3 +27,9 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 ```
 
 https://pages.github.com/versions/
+
+
+## Share Content
+
+FaceBook issues 
+https://developers.facebook.com/tools/debug/sharing/
